@@ -1,7 +1,6 @@
 const express   = require('express');
 const cors      = require('cors');
 const Pusher    = require('pusher');
-const serverless = require('serverless-http');
 
 // Pusher 설정 (환경 변수에서 가져옵니다)
 const pusher = new Pusher({
@@ -55,4 +54,4 @@ app.post('/api/pusher/auth', (req, res) => {
 });
 
 // ─── Vercel 서버리스 함수 핸들러 내보내기 ──────────
-module.exports = serverless(app);
+module.exports = app;
