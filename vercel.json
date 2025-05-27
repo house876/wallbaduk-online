@@ -22,9 +22,9 @@
   ],
 "env": {
   "PUSHER_APP_ID": "1998328",
-  "PUSHER_KEY": "@358372ce45b0f1215601",
-  "PUSHER_SECRET": "@aa258605aac9b13bf293",
-  "PUSHER_CLUSTER": "@ap3"
+  "PUSHER_KEY": "358372ce45b0f1215601",
+  "PUSHER_SECRET": "aa258605aac9b13bf293",
+  "PUSHER_CLUSTER": "ap3"
 }
 
 }
