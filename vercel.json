@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static" 
+    },
+    {
+      "src": "api/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+"env": {
+  "PUSHER_APP_ID": "@PUSHER_APP_ID",
+  "PUSHER_KEY": "@PUSHER_KEY",
+  "PUSHER_SECRET": "@PUSHER_SECRET",
+  "PUSHER_CLUSTER": "@PUSHER_CLUSTER"
+}
+
+}
