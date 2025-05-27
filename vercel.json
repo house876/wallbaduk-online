@@ -26,5 +26,15 @@
   "PUSHER_SECRET": "aa258605aac9b13bf293",
   "PUSHER_CLUSTER": "ap3"
 }
-
+{
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "https://wallbaduk-online.vercel.app" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, X-Requested-With, Accept" }
+      ]
+    }
+  ]
 }
